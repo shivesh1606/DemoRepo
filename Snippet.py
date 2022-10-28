@@ -24,8 +24,8 @@ def multiply_numbers(x, y):
     return x * y
 
 
-key="ABCD"
+key="ABC"
 
 
-if(key=="ABC"):
+if(key=="ABCD"):
     print(multiply_numbers(5, 5))
