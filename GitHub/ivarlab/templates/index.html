@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+{% load static%}
+{% load hitcount_tags %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Project  {{count}}</title>
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/assets/img/arvricon2.png" rel="icon">
+  <link href="/static/assets/img/arvricon2.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  <!-- ======= Header ======= -->
+  <div class="video">
+    <video autoplay loop muted>
+      <source src="/static/assets/video/techgirl.mp4" type="video/mp4">
+      <!-- <source src="/static/assets/video/girlwithvr.mp4" type="video/mp4"> -->
+
+    </video>
+  </div>
+
+
+  <div class="nav_hero">
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="logo">
+          <!-- <h1><a href="index.html"><span id="ivar">iVAR</span></a></h1> -->
+
+          <div class="logoitem"><a href=""><span id="ivar"><img src="/static/assets/img/arvricon2.png" /></span></a>
+          </div>
+          <div class="logoitem logotext">iVAR</div>
+          <h1></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link active" href="{%url 'home_page'%}">HOME</a></li>
+            <li><a class="nav-link" href="{%url 'team_page'%}">TEAM</a></li>
+            <li><a class="nav-link " href="{%url 'equipment_page'%}">EQUIPMENT</a></li>
+            
+          <li><a class="nav-link " href="{%url 'gallery_page'%}">GALLERY</a></li>
+            <li class="dropdown"><a href="#"><span>RESEARCH</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="{%url 'projects_page'%}">PROJECTS</a></li>
+                <li><a href="{%url 'collaborations_page'%}">COLLABORATIONS</a></li>
+                <li><a href="{%url 'conference_page'%}">CONFERENCE PRESENTATIONS</a></li>
+                <li><a href="{%url 'invited_page'%}">INVITED TALKS</a></li>
+                <li><a href="{%url 'editorial_page'%}">EDITORIAL BOARD</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="{%url 'publication_page'%}">PUBLICATIONS</a></li>
+            <li><a class="nav-link" href="{%url 'awards_page'%}">AWARDS</a></li>
+            <li><a class="nav-link" href="{%url 'media_page'%}">MEDIA</a></li>
+            <li><a class="nav-link" href="{%url 'contact_page'%}">JOIN US</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div id="heroCarousel" data-bs-interval="2500" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <!-- Slide 1 -->
+            <!-- <div class="carousel-item active" style="background-image: url(static/assets/img/slide/slide-1.jpg);"> -->
+            <div class="carousel-item active">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInRight">INTERACTIVE</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <!-- <div class="carousel-item" style="background-image: url(static/assets/img/slide/slide-2.jpg);"> -->
+            <div class="carousel-item">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInRight">VIRTUAL</h2>
+                  <!-- <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Read More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <!-- <div class="carousel-item" style="background-image: url(static/assets/img/slide/slide-3.jpg);"> -->
+            <div class="carousel-item">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInRight">AUGMENTED</h2>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInRight">REALITY</h2>
+                </div>
+              </div>
+            </div>
+
+          
+
+          </div>
+
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon ri-arrow-left-line" aria-hidden="true"></span>
+          </a>
+
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon ri-arrow-right-line" aria-hidden="true"></span>
+          </a>
+        
+
+        </div>
+      </div>
+      <div class="lineundercarousel">
+        <button class="nav-link scrollto" ><a href="#about">Explore</a> </button>
+     </div>
+    </section><!-- End Hero -->
+  </div>
+
+
+
+  <!-- <hr class = "section-seperating-line-1"> -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <h1 class="welcome_message">Welcome to iVAR.</h1>
+        <div class="wlcome message">
+          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+            I will giveyou a complete account of the system, and expound the actual teachings o
+            f the great explorer of the truth, the master-
+            builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but
+            because those who do not know how to pursue pleasure rationally encounter consequences
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <!--End About Section -->
+
+    <section id="aboutProf" class="aboutProf">
+      <div class="rows">
+
+
+        <div class="profPhoto columns">
+
+          <img class="Img" src="/static/assets/img/profkaushal.JPG" alt="Profile Picture">
+
+        </div>
+        <div class="profInfo columns">
+
+          <p><a href="http://ww.cetiitkgp.ac.in/prof/3">Prof. Kaushal Kumar Bhagat</a></p>
+          <p> Assistant Professor Centre of Educational Technology</p>
+          <p> IIT Kharagpur</p>
+          <!-- <p><a href="mailto:kkntnu@hotmail.com">kkntnu@hotmail.com</a></p> -->
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+    
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container position-relative">
+
+        <div class="text-center title">
+          <h3>What we have achieved so far</h3>
+          <p>Iusto et labore modi qui sapiente xpedita tempora et aut non ipsum consequatur illo.</p>
+        </div>
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Research Publication</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Conference papers</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Book Chapters</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Research Projects</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+
+
+    <hr>
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!-- <img src="static/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
+                <iframe width="500" height="330" src="https://www.youtube.com/embed/LXb3EKWsInQ">
+                </iframe>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  <a href="">Video 1</a>
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!-- <img src="static/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""> -->
+                <iframe width="500" height="330" src="https://www.youtube.com/embed/LXb3EKWsInQ">
+                </iframe>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  <a href="">Video 2</a>
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!-- <img src="static/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> -->
+                <iframe width="500" height="330" src="https://www.youtube.com/embed/LXb3EKWsInQ">
+                </iframe>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  <a href="">Video 3</a>
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!-- <img src="static/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt=""> -->
+                <iframe width="500" height="330" src="https://www.youtube.com/embed/LXb3EKWsInQ">
+                </iframe>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  <a href="">Video 4</a>
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <!-- <img src="static/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""> -->
+                <iframe width="500" height="330" src="https://www.youtube.com/embed/LXb3EKWsInQ">
+                </iframe>
+
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  <a href="">Video 5</a>
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contact</h2>
+          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        </div>
+      </div> -->
+
+    <!-- <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div> -->
+
+    <!-- <div class="container">
+
+        <div class="info-wrap mt-5">
+          <div class="row">
+            <div class="col-lg-4 info">
+              <i class="ri-map-pin-line"></i>
+              <h4>Location:</h4>
+              <p>A108 Adam Street<br>New York, NY 535022</p>
+            </div>
+
+            <div class="col-lg-4 info mt-4 mt-lg-0">
+              <i class="ri-mail-line"></i>
+              <h4>Email:</h4>
+              <p>info@example.com<br>contact@example.com</p>
+            </div>
+
+            <div class="col-lg-4 info mt-4 mt-lg-0">
+              <i class="ri-phone-line"></i>
+              <h4>Call:</h4>
+              <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+            </div>
+          </div>
+        </div> -->
+
+    <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+      </div>
+    </section>End Contact Section -->
+
+  </main><!-- End #main -->
+  <div class="visitor">
+    <p>Visitors</p>
+    <p class="viscount">{{count}}</p>
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-8 col-xs-8 col-sm-8">
+            <div class="footer-info">
+              <h3>iVAR</h3>
+              <p>
+                FTA-17, IIT Kharagpur Campus<br>
+                Kharagpur, INDIA <br><br>
+                <strong>Phone:</strong> +91-9647931583<br>
+                <strong>Email:</strong> kkntnu@hotmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-xs-4 col-sm-4 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <!-- <i class="bx bx-chevron-right"></i>  -->
+              <li> <a href="#">Home</a></li>
+              <li> <a href="#">About us</a></li>
+              <li> <a href="#">Services</a></li>
+              <li> <a href="#">Terms of service</a></li>
+              <li> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.8807657385228!2d87.31223609999999!3d22.320348699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d441b263414a1%3A0x507d5efeae65d3ff!2sAdvance%20Technology%20Development%20Centre%2C%20IIT%20Kharagpur%2C%20Kharagpur%2C%20West%20Bengal%20721302!5e0!3m2!1sen!2sin!4v1665034248957!5m2!1sen!2sin" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>

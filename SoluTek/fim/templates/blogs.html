@@ -1,0 +1,191 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="http://fonts.cdnfonts.com/css/work-sans" rel="stylesheet">
+    <link  href="{% static '/designBlog.css'%}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static '/styles.css'%}" />
+    <title>Blogs</title>
+</head>
+
+<body>
+
+    <div id="main">
+        <nav class="navbar navbar-expand-lg bg-light mainNav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">FIM LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+              <div class="navList">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="{%url 'home'%}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{%url 'about'%}">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{%url 'home'%}">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{%url 'blogs'%}">Blog</a>
+                    </li>
+                    <li class="nav-item contactBtn">
+                      <a class="nav-link" href="{%url 'contact'%}">Contact us</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+    <p class="blogsHeading text-center">
+        Blogs
+    </p>
+    <div class="m-4 blogsSubjectheading">
+        <p>Jee</p>
+        <div class="row d-flex ">
+
+            <div class="subjectBox">
+                <span>
+                    Subject
+                </span>
+
+                <div type="button" data-toggle="modal" blogSubjectContent="why should i care"
+                    blogSubjectTitle="I dont care again" data-target="#exampleModalLong" id="modalButton">
+                    <img src="{% static '/open.png'%}" id-="modalButtonImg"/>
+                </div>
+
+            </div>
+            <div class="subjectBox">
+                <span class="blogSubjectTitle">
+                    Subject 2
+                </span>
+                <div type="button" data-toggle="modal" blogSubjectContent="asdasdasdasdas" blogSubjectTitle="HIIIIIII"
+                    data-target="#exampleModalLong" id="modalButton">
+                    <img src="{% static '/open.png'%}" id-="modalButtonImg" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="bodyBaseLogo">
+        <h1>Visit us</h1>
+      </div>
+      <div id="bodyBase">
+        <div id="leftBase">
+          <div id="baseNameAddr">
+            <h3>Soni Sir's</h3>
+            <h1>FIM</h1>
+            <h2>Eduventures</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis quae nulla facere exercitationem, cum consequatur
+              veritatis quos similique ducimus unde deleniti id incidunt a
+              quaerat minus odio ullam inventore eos!
+            </p>
+          </div>
+  
+          <div id="contacts">
+            <div id="phnNos">
+              <h1>+91-9099999999</h1>
+              <h1>+91-9898989999</h1>
+              <h1>contact@fim.com</h1>
+            </div>
+            <div id="socials">
+              <img src="Media/facebook.svg" alt="" id="socialIcons" />
+              <img src="Media/instagram.svg" alt="" id="socialIcons" />
+              <img src="Media/youtube.svg" alt="" id="socialIcons" />
+              <img src="Media/twitter.svg" alt="" id="socialIcons" />
+              <img src="Media/whatsapp.svg" alt="" id="socialIcons" />
+              <img src="Media/message-square.svg" alt="" id="socialIcons" />
+            </div>
+          </div>
+        </div>
+        <div id="rightBase">
+          <div>
+            <img id="map" src="Media/map.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+</div>
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus');
+
+
+        })
+
+        // $("#modalButton").click(function () {
+
+        //     var data = $(this).attr("blogSubjectTitle"); // GET THE DATA IN ATTR
+        //     event.preventDefault();
+        //     alert(data);
+        //     console.log(data);
+
+        // });
+        $(document).on('click', '#modalButton', function () {
+    // your function here
+    
+    var blogSubjectTitle = $(this).attr("blogSubjectTitle"); // GET THE DATA IN ATTR
+      
+    var blogSubjectContent = $(this).attr("blogSubjectContent"); // GET THE DATA IN ATTR
+            event.preventDefault();
+            // alert(data);
+            console.log(blogSubjectContent);
+            $('.modal-title')[0].innerText=  blogSubjectTitle;
+            $('.modal-body')[0].innerText=  blogSubjectContent;
+
+            
+
+});
+
+    </script>
+</body>
+
+</html>

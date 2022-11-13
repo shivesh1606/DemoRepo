@@ -1,0 +1,83 @@
+#heroDiv{
+    /* background-image: url("Media/chat.svg"); */
+    height: 15rem;
+    width: 100%;
+    background-repeat:no-repeat;
+    object-fit: cover;
+    background-color: #475569;
+    margin-bottom: 2rem;
+    display: flex;
+}
+#heroDiv h1{
+    align-self: flex-end;
+    margin-left:5rem;
+    color:white;
+    margin-bottom: 2rem;
+}
+#aboutOptions{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutButtons{
+    color: #475569;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding:0.2rem 2rem;
+    font-weight: 500;
+}
+
+
+.aboutContent{
+    display: flex;
+    padding: 5rem 10rem 2rem 10rem;
+    justify-content: space-around;
+    gap:4rem;
+}
+
+.aboutContentImage{
+    max-width: 300px;
+    min-width: 300px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3rem;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.aboutContent p{
+    width: 90%;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+@media screen and (max-width: 1000px){
+    #heroDiv h1{
+        margin-left:1rem;
+        margin-bottom: 1rem;
+    }
+    #aboutOptions{
+        gap:0.5rem;
+    }
+    .aboutButtons{
+        padding:0.2rem 1rem
+    }
+    .aboutContent{
+        flex-direction: column;
+        padding:3rem 0.5rem;
+        align-items: center;
+        gap:2rem;
+    }
+    .aboutContent p{
+        text-align: center;
+        margin:auto;
+        padding: 0;
+    }
+}
